@@ -1,0 +1,11 @@
+system:
+  model: "gemini-2.0-flash"  
+  temperature: 0.2
+
+thresholds:
+  roas_drop_alert: 0.2
+  min_confidence: 0.7
+
+paths:
+  data: "data/synthetic_fb_ads_undergarments.csv" 
+  output_dir: "reports"
