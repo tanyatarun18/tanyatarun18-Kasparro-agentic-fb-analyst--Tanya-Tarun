@@ -1,0 +1,7 @@
+google-generativeai
+pandas
+numpy
+python-dotenv
+pyyaml
+termcolor
+matplotlib
