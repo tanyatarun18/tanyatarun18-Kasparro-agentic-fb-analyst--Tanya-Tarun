@@ -1,1 +1,24 @@
-[]
+[
+  {
+    "related_hypothesis": "The 'Adset-5 WC' adset has a ROAS of 0.88, indicating a potential mismatch between the ad creative and the website conversion flow.",
+    "recommendations": {
+      "variations": [
+        {
+          "headline": "Limited Time Offer: 50% Off!",
+          "primary_text": "Don't miss out! Get 50% off your first order of [Product Name] for a limited time only. Experience the [Benefit 1] and [Benefit 2] that everyone is talking about. Shop now before it's too late! [Link]",
+          "reasoning": "Creates urgency and scarcity by highlighting a limited-time discount and encourages immediate action."
+        },
+        {
+          "headline": "The Secret [Benefit] Revealed!",
+          "primary_text": "Discover the secret to achieving [Desired Outcome] with [Product Name]. Thousands are already experiencing [Quantifiable Result]! Click here to learn more and transform your [Area of Life] today! [Link]",
+          "reasoning": "Sparks curiosity by hinting at a secret and uses social proof by mentioning 'thousands' of users and a quantifiable result."
+        },
+        {
+          "headline": "Join the [Product Name] Revolution!",
+          "primary_text": "Tired of [Problem]? [Product Name] is changing the game! See why [Number] of customers are raving about [Benefit 1] and [Benefit 2]. Get yours now and experience the difference! [Link]",
+          "reasoning": "Appeals to a sense of belonging and uses social proof by highlighting the number of satisfied customers and their positive experiences."
+        }
+      ]
+    }
+  }
+]
