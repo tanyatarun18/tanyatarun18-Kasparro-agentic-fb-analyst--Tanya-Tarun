@@ -1,0 +1,29 @@
+[
+  {
+    "hypothesis": "Multiple 'Men ComfortMax Launch' campaigns are underperforming, with 'Men Comfortmax Launch' at 1.65, indicating inconsistent campaign setup or targeting issues.",
+    "evidence": "Several variations of the campaign name have ROAS below 2.0, while others perform well.",
+    "confidence": "Medium",
+    "validation": {
+      "valid": false,
+      "reason": "Actual ROAS is 12.02. Underperformance confirmed."
+    }
+  },
+  {
+    "hypothesis": "Several creatives promoting 'men' products have ROAS below 2.0, indicating potential creative fatigue or a lack of compelling messaging for this product category.",
+    "evidence": "Creatives like 'Seamless confidence for every day  new men inner vests.' (1.67), 'Confidence starts inside  elevate with men briefs.' (1.75), and 'Hot & comfy: men athletic briefs now 20% off  feel the difference.' (1.93) are all underperforming.",
+    "confidence": "High",
+    "validation": {
+      "valid": false,
+      "reason": "Actual ROAS is 9.65, which is not below 2.0. Hypothesis is not valid."
+    }
+  },
+  {
+    "hypothesis": "The creative 'Wirefree ease, cloudsoft cups  women panties that fits right.' has a ROAS of 0, indicating a problem with the ad copy or visual elements.",
+    "evidence": "ROAS is significantly below the target of 2.0.",
+    "confidence": "High",
+    "validation": {
+      "valid": false,
+      "reason": "Actual ROAS is 9.77, which is greater than or equal to 2.0. Hypothesis is incorrect."
+    }
+  }
+]
