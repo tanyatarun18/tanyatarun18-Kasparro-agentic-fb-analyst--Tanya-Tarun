@@ -1,1 +1,24 @@
-[]
+[
+  {
+    "related_hypothesis": "The creative 'Push comfort, not wires  everyday men boxers.' has a ROAS of 0, indicating a severe disconnect with the target audience or a broken conversion funnel.",
+    "recommendations": {
+      "variations": [
+        {
+          "headline": "Ditch the Wires, Keep the Comfort!",
+          "primary_text": "Finally, boxers that feel as good as they look. Experience all-day comfort without the squeeze. Limited stock \u2013 grab yours before they're gone! Shop now and feel the difference. [Link]",
+          "reasoning": "Addresses the 'comfort' aspect directly, highlights the 'no wires' benefit, and creates urgency with 'limited stock'."
+        },
+        {
+          "headline": "The Secret to All-Day Comfort (Men, You'll Thank Us!)",
+          "primary_text": "Tired of uncomfortable underwear? Our wire-free boxers are engineered for ultimate support and breathability. See why thousands of men are making the switch. Click here to discover the secret! [Link]",
+          "reasoning": "Uses curiosity ('the secret') and social proof ('thousands of men') to pique interest and encourage clicks. Directly addresses the pain point of uncomfortable underwear."
+        },
+        {
+          "headline": "Upgrade Your Underwear Game!",
+          "primary_text": "Level up your everyday comfort with our revolutionary wire-free boxers. Designed for maximum support and all-day wear. Get 20% off your first order with code COMFORT20. Shop now and experience the difference! [Link]",
+          "reasoning": "Offers a direct incentive (20% off) to encourage immediate purchase. Uses aspirational language ('upgrade your game') and reinforces the key benefits of comfort and support."
+        }
+      ]
+    }
+  }
+]

@@ -1,0 +1,14 @@
+[
+  {
+    "hypothesis": "The 'Adset-5 WC' adset has a ROAS of 0.88, indicating a potential mismatch between the ad creative and the website conversion flow.",
+    "query": "Why did ROAS drop last week?",
+    "date": "2025-11-26",
+    "validation_reason": "Actual ROAS is 1.98, which is less than 2.0. Underperformance confirmed."
+  },
+  {
+    "hypothesis": "The creative 'Push comfort, not wires  everyday men boxers.' has a ROAS of 0, indicating a severe disconnect with the target audience or a broken conversion funnel.",
+    "query": "Why did ROAS drop last week?",
+    "date": "2025-11-30",
+    "validation_reason": "Actual ROAS is 1.00, which is less than 2.0. Underperformance confirmed."
+  }
+]
