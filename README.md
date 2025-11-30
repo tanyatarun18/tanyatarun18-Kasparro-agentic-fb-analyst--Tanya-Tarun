@@ -106,10 +106,8 @@ Ask specific questions about your data.
 make query q="Which creative type has the highest CTR?"                                                                                                                                                            
 OR: python run.py "Which creative type has the highest CTR?"
 
-3. Resilience Testing
-   
-    Run the test suite to verify security and schema guards.
-
+3. Resilience Testing                                                   
+    Run the test suite to verify security and schema guards.            
     python test_resilience.py
 
 
