@@ -26,38 +26,39 @@ graph TD
 ```
 
 ## 🤖 Agent Responsibilities
-##🛡️ Governance Layer (New in V2)
-##Role##: Security & Validation.
+### 🛡️ Governance Layer (New in V2)
 
-Function: Intercepts the user query before it reaches any agent. It sanitizes input to prevent injections and validates the CSV schema to ensure data integrity.
+**Role**: Security & Validation.
 
-1. Planner Agent
-Role: Strategic decomposition.
+**Function**: Intercepts the user query before it reaches any agent. It sanitizes input to prevent injections and validates the CSV schema to ensure data integrity.
 
-Function: It accepts high-level ambiguous queries (e.g., "Why is ROAS down?") and breaks them into logical sub-tasks.
+### 1. Planner Agent
+**Role**: Strategic decomposition.
 
-Output: JSON-structured plan.
+**Function**: It accepts high-level ambiguous queries (e.g., "Why is ROAS down?") and breaks them into logical sub-tasks.
 
-2. Data Agent (The Execution Layer)
-Role: Safe code execution.
+**Output**: JSON-structured plan.
 
-Function: It acts as the interface between the LLM and the raw CSV. It generates Python Pandas code dynamically to answer specific questions from the plan.
+### 2. Data Agent (The Execution Layer)
+**Role**: Safe code execution.
 
-Safety: Uses a restricted local scope exec() environment.
+**Function**: It acts as the interface between the LLM and the raw CSV. It generates Python Pandas code dynamically to answer specific questions from the plan.
 
-3. Insight Agent (The Analyst)
-Role: Pattern recognition & Hypothesis generation.
+**Safety**: Uses a restricted local scope exec() environment.
 
-Function: Analyzes the statistical summary provided by the Data Agent. It looks for anomalies (e.g., High Spend + Low ROAS).
+### 3. Insight Agent (The Analyst)
+**Role**: Pattern recognition & Hypothesis generation.
 
-Memory: It checks memory/short_term_memory.json before running to ensure it doesn't "rediscover" insights found in previous runs.
+**Function**: Analyzes the statistical summary provided by the Data Agent. It looks for anomalies (e.g., High Spend + Low ROAS).
 
-4. Evaluator Agent (The Critic)
-Role: Mathematical Validation.
+**Memory**: It checks memory/short_term_memory.json before running to ensure it doesn't "rediscover" insights found in previous runs.
 
-Function: This is the logic gate. It takes a hypothesis from the Insight Agent and writes new Python code to test it against the data.
+### 4. Evaluator Agent (The Critic)
+**Role**: Mathematical Validation.
 
-Logic:
+**Function**: This is the logic gate. It takes a hypothesis from the Insight Agent and writes new Python code to test it against the data.
+
+**Logic**:
 
 If Actual Metric meets the threshold (e.g., ROAS < 4.0), it returns Valid: True.
 
