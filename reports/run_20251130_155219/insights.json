@@ -1,0 +1,29 @@
+[
+  {
+    "hypothesis": "The 'Adset-3 Retargeting' adset has a ROAS of 1.12, indicating that the retargeting efforts are not effectively re-engaging potential customers. This could be due to ad fatigue or an irrelevant offer.",
+    "evidence": "ROAS is below the target of 2.0, suggesting retargeting ads are not compelling enough.",
+    "confidence": "High",
+    "validation": {
+      "valid": false,
+      "reason": "Adset 'Adset-3 Retargeting' not found in the data."
+    }
+  },
+  {
+    "hypothesis": "The 'Adset-4 Lookalike' adset has a ROAS of 1.67, suggesting that the lookalike audience is not closely aligned with the ideal customer profile. The seed audience used to create the lookalike may not be representative of high-value customers.",
+    "evidence": "ROAS is below the target of 2.0, indicating the lookalike audience is not converting efficiently.",
+    "confidence": "Medium",
+    "validation": {
+      "valid": false,
+      "reason": "No data found for adset 'Adset-4 Lookalike'. Hypothesis cannot be validated."
+    }
+  },
+  {
+    "hypothesis": "The creative 'Timeless comfort  everyday men boxers' has a ROAS of 0.78, indicating that the creative messaging is not resonating with the target audience. The 'Timeless comfort' angle may not be a strong selling point for this product.",
+    "evidence": "ROAS is significantly below the target of 2.0, suggesting the creative is underperforming.",
+    "confidence": "High",
+    "validation": {
+      "valid": false,
+      "reason": "No data found for the creative 'Timeless comfort  everyday men boxers'. Cannot validate the hypothesis."
+    }
+  }
+]

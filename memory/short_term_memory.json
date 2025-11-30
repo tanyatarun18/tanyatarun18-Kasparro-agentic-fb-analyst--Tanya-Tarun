@@ -22,5 +22,77 @@
     "query": "Why did ROAS drop last week?",
     "date": "2025-11-30",
     "validation_reason": "Actual ROAS is 0.24, which is low. Underperformance confirmed."
+  },
+  {
+    "hypothesis": "The 'Men-Athleisure Cooli-g' campaign has a ROAS of 0.0, indicating a complete failure, possibly due to a broken link or technical issue preventing conversions.",
+    "query": "Why did ROAS drop last week?",
+    "date": "2025-11-30",
+    "validation_reason": "Actual ROAS is 0.00, which is low. Underperformance confirmed."
+  },
+  {
+    "hypothesis": "The 'MEN BOLD  OLORS DROP' campaign has a very low ROAS of 0.40, suggesting the creative assets are not resonating with the target audience. The messaging or visuals might be misaligned with customer expectations for this product line.",
+    "query": "Why did ROAS drop last week?",
+    "date": "2025-11-30",
+    "validation_reason": "Actual ROAS is 0.41. Underperformance confirmed."
+  },
+  {
+    "hypothesis": "The creative 'Confidence starts inside  elevate with men inner vests.' has a ROAS of 0.32, indicating a potential disconnect between the ad copy and the product offering. The messaging might not be effectively communicating the value proposition of the inner vests.",
+    "query": "Why did ROAS drop last week?",
+    "date": "2025-11-30",
+    "validation_reason": "Actual ROAS is 0.32, which is low. Underperformance confirmed."
+  },
+  {
+    "hypothesis": "The 'Adset-1 Broad' adset has a low ROAS of 1.35, suggesting that the broad targeting strategy is not effectively reaching the intended audience. Refining the targeting parameters or exploring alternative audience segments could improve performance.",
+    "query": "Why did ROAS drop last week?",
+    "date": "2025-11-30",
+    "validation_reason": "Actual ROAS is 2.88, which is low. Underperformance confirmed."
+  },
+  {
+    "hypothesis": "The 'Men  Bold  Coors  Drop' campaign's low ROAS of 0.17 may be due to a disconnect between the product offering and the target audience's expectations, leading to low conversion rates.",
+    "query": "Which campaigns have the lowest ROAS?",
+    "date": "2025-11-30",
+    "validation_reason": "Actual ROAS is 0.17, which is low."
+  },
+  {
+    "hypothesis": "The 'Men  Bold  Coors  Drop' campaign's low ROAS of 0.17 might be attributed to a poorly optimized landing page experience, resulting in high bounce rates and low conversion rates.",
+    "query": "Which campaigns have the lowest ROAS?",
+    "date": "2025-11-30",
+    "validation_reason": "Actual ROAS is 0.17, which is low."
+  },
+  {
+    "hypothesis": "The 'MEN BOLD  OLORS DROP' campaign has a very low ROAS of 0.40, suggesting the product is not appealing to the target audience or the price point is too high.",
+    "query": "Why did ROAS drop last week?",
+    "date": "2025-11-30",
+    "validation_reason": "Actual ROAS is 0.41. Underperformance confirmed."
+  },
+  {
+    "hypothesis": "The 'MEN  Signature  Soft' campaign has a low ROAS of 0.65, potentially because the ad copy is not effectively communicating the benefits of the 'Signature Soft' product line. Customers may not understand what makes it unique or worth purchasing.",
+    "query": "Why did ROAS drop last week?",
+    "date": "2025-11-30",
+    "validation_reason": "The campaign 'MEN  Signature  Soft' has a ROAS of 1.99, which is below the target of 4.0. Hypothesis confirmed: The campaign is underperforming."
+  },
+  {
+    "hypothesis": "The 'recent_roas_last_7_days' is significantly lower than the 'overall_roas', indicating a recent performance drop, potentially due to increased competition or seasonality.",
+    "query": "Why is the Men Comfortmax Launch campaign underperforming?",
+    "date": "2025-11-30",
+    "validation_reason": "The 'recent_roas_last_7_days' (1.06) is significantly lower than the 'overall_roas' (5.79), indicating a recent performance drop. Hypothesis confirmed."
+  },
+  {
+    "hypothesis": "The 'Adset-5 WC' adset has a low ROAS of 1.53, indicating potential issues with the landing page experience. Users may be clicking the ads but not converting due to a confusing or unoptimized checkout process.",
+    "query": "Analyze the performance of Adset-5 WC",
+    "date": "2025-11-30",
+    "validation_reason": "The ROAS for 'Adset-5 WC' is 3.18, which is below the target of 4.0. Hypothesis validated: True."
+  },
+  {
+    "hypothesis": "The 'Adset-5 WC' adset's ROAS of 1.53 might be due to an overly broad audience. While the high impression count suggests wide reach, the relatively low purchase conversion indicates that the ads are not resonating with the specific users who are most likely to buy.",
+    "query": "Analyze the performance of Adset-5 WC",
+    "date": "2025-11-30",
+    "validation_reason": "The ROAS for 'Adset-5 WC' is 3.18, which is below the target of 4.0. The hypothesis that it is underperforming is validated."
+  },
+  {
+    "hypothesis": "The 'Adset-5 WC' adset's ROAS of 1.53 could be caused by ineffective ad creatives. The current creatives may not be compelling enough to drive conversions, despite generating clicks.",
+    "query": "Analyze the performance of Adset-5 WC",
+    "date": "2025-11-30",
+    "validation_reason": "The ROAS for 'Adset-5 WC' is 1.53, which is below the target of 4.0. The hypothesis that ineffective ad creatives are causing the low ROAS is plausible."
   }
 ]

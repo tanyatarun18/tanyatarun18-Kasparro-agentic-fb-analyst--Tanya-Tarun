@@ -16,34 +16,45 @@ from src.exceptions import SecurityError
 
 load_dotenv()
 
-def save_json_artifact(data, filename, folder="reports"):
+def convert_numpy(obj):
+    if isinstance(obj, dict):
+        return {k: convert_numpy(v) for k, v in obj.items()}
+    if isinstance(obj, list):
+        return [convert_numpy(i) for i in obj]
+    if hasattr(obj, 'item'): 
+        return obj.item()
+    return obj
+
+def save_artifacts(data, filename, folder):
     os.makedirs(folder, exist_ok=True)
     filepath = os.path.join(folder, filename)
+    clean_data = convert_numpy(data)
     with open(filepath, "w", encoding="utf-8") as f:
-        json.dump(data, f, indent=2)
+        json.dump(clean_data, f, indent=2)
 
 def generate_markdown(query, data_summary, insights, creatives):
     date_str = datetime.date.today().strftime("%B %d, %Y")
+    clean_summary = convert_numpy(data_summary)
     
     md = f"# Marketing Performance Analysis\n"
     md += f"**Date:** {date_str}\n\n"
     md += f"**Query:** *\"{query}\"*\n\n"
     
-    md += "## 1. Executive Summary \n"
-    summary_str = json.dumps(data_summary, indent=2)
+    md += "## 1. Executive Summary\n"
+    summary_str = json.dumps(clean_summary, indent=2)
     if len(summary_str) > 3000:
-        summary_str = summary_str[:3000] + "\n... (data truncated for brevity)"
+        summary_str = summary_str[:3000] + "\n... (data truncated)"
     md += f"```json\n{summary_str}\n```\n\n"
     
-    md += "## 2. Strategic Insights & Validation \n"
+    md += "## 2. Strategic Insights & Validation\n"
     for item in insights:
-        status_icon = "OK" if item['validation']['valid'] else "X"
+        status_icon = "✅" if item['validation']['valid'] else "❌"
         md += f"### {status_icon} Hypothesis: {item['hypothesis']}\n"
         md += f"- **Confidence:** {item.get('confidence', 'N/A')}\n"
         md += f"- **Evidence:** {item.get('evidence', 'N/A')}\n"
         md += f"- **Validation Result:** {item['validation']['reason']}\n\n"
     
-    md += "## 3. Creative Optimization \n"
+    md += "## 3. Creative Optimization\n"
     if creatives:
         for c in creatives:
             md += f"**Context:** Based on *{c['related_hypothesis']}*\n\n"
@@ -59,47 +70,42 @@ def generate_markdown(query, data_summary, insights, creatives):
 
 def main():
     parser = argparse.ArgumentParser(description="Kasparro Agentic Analyst CLI")
-    parser.add_argument("query", type=str, nargs="?", default="Why did ROAS drop last week?", help="The analytical question to resolve.")
+    parser.add_argument("query", type=str, nargs="?", default="Why did ROAS drop last week?", help="Analysis query")
     args = parser.parse_args()
 
     try:
         clean_query = InputSanitizer.clean_query(args.query)
     except SecurityError as e:
-        print(f" Security Alert: {e}")
+        print(f"⛔ Security Alert: {e}")
         logger.log_error("SecurityGuard", e)
         logger.save_logs()
         return
 
-    print(f"\n Agentic Analyst | Processing: '{clean_query}'")
+    print(f"\n🤖 Agentic Analyst | Processing: '{clean_query}'")
     print("="*60)
     
     logger.log("Orchestrator", "start", {"query": clean_query})
 
     planner = PlannerAgent()
     plan = planner.create_plan(clean_query)
-    
-    if not plan or 'analysis_plan' not in plan:
-        logger.log("Orchestrator", "boundary_fail", {"stage": "planner", "reason": "Invalid plan structure"}, level="ERROR")
-        print(" Analysis aborted: Planner failed.")
+    if not plan:
+        print("❌ Analysis aborted: Planner failed.")
         return
-        
-    print(f" Plan Established: {len(plan.get('analysis_plan', []))} steps.")
+    print(f"📝 Plan Established: {len(plan.get('analysis_plan', []))} steps.")
 
     data_agent = DataAgent()
     data_summary = data_agent.analyze(clean_query)
     
     if isinstance(data_summary, str) and "Error" in data_summary:
-        logger.log("Orchestrator", "boundary_fail", {"stage": "data", "reason": data_summary}, level="ERROR")
-        print(f" Analysis aborted: {data_summary}")
+        print(f"❌ Analysis aborted: {data_summary}")
         return
-    print(f" Data Retrieved Successfully.")
+    print(f"📊 Data Retrieved Successfully.")
 
     insight_agent = InsightAgent()
     insights_raw = insight_agent.generate_insights(clean_query, data_summary)
     
     if not insights_raw or 'insights' not in insights_raw:
-        logger.log("Orchestrator", "boundary_fail", {"stage": "insights", "reason": "No insights returned"}, level="ERROR")
-        print(" No actionable insights found.")
+        print("⚠️ No actionable insights found.")
         return
 
     evaluator = EvaluatorAgent()
@@ -107,10 +113,9 @@ def main():
     
     validated_insights = []
     final_creatives = []
-    
     memory_buffer = []
 
-    print("\n  Validating Hypotheses...")
+    print("\n⚖️  Validating Hypotheses...")
     for item in insights_raw['insights']:
         validation = evaluator.validate_hypothesis(item['hypothesis'], data_summary)
         
@@ -128,7 +133,7 @@ def main():
                 "validation_reason": validation['reason']
             })
 
-            print("       Generating creative variations...")
+            print("      🎨 Generating creative variations...")
             new_copy = creative_agent.generate_copy(item['hypothesis'])
             if new_copy:
                 final_creatives.append({
@@ -138,21 +143,24 @@ def main():
 
     if memory_buffer:
         insight_agent.save_to_memory(memory_buffer)
-        print(f"\n [Memory] Saved {len(memory_buffer)} new valid insights to memory/short_term_memory.json")
+        print(f"\n🧠 [Memory] Saved {len(memory_buffer)} new valid insights.")
         logger.log("Orchestrator", "memory_save", {"count": len(memory_buffer)})
 
-    print("\n Saving Artifacts...")
+    print("\n💾 Saving Artifacts...")
     
-    save_json_artifact(validated_insights, "insights.json")
-    save_json_artifact(final_creatives, "creatives.json")
+    run_timestamp = datetime.datetime.now().strftime("%Y%m%d_%H%M%S")
+    run_folder = f"reports/run_{run_timestamp}"
+    
+    save_artifacts(validated_insights, "insights.json", folder=run_folder)
+    save_artifacts(final_creatives, "creatives.json", folder=run_folder)
     
     report_content = generate_markdown(clean_query, data_summary, validated_insights, final_creatives)
-    with open("reports/report.md", "w", encoding="utf-8") as f:
+    with open(f"{run_folder}/report.md", "w", encoding="utf-8") as f:
         f.write(report_content)
 
     logger.save_logs()
 
-    print(f" Workflow Complete. Check 'reports/' and 'logs/' folders.")
+    print(f"✅ Workflow Complete. Results saved in: {run_folder}")
 
 if __name__ == "__main__":
     main()

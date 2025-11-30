@@ -1,0 +1,24 @@
+[
+  {
+    "related_hypothesis": "The 'MEN  Signature  Soft' campaign has a low ROAS of 0.65, potentially because the ad copy is not effectively communicating the benefits of the 'Signature Soft' product line. Customers may not understand what makes it unique or worth purchasing.",
+    "recommendations": {
+      "variations": [
+        {
+          "headline": "Finally, Softness That Lasts!",
+          "primary_text": "Tired of shirts that lose their softness after one wash? Our Signature Soft collection is engineered for lasting comfort. Experience the difference today! Limited stock available.",
+          "reasoning": "Addresses a common pain point (softness fading) and introduces the 'lasting comfort' benefit. The 'Limited stock available' creates urgency."
+        },
+        {
+          "headline": "\ud83e\udd2b The Secret to All-Day Comfort...",
+          "primary_text": "Imagine a shirt so soft, you'll forget you're wearing it. Our Signature Soft fabric is a game-changer. Discover the secret to ultimate comfort. Shop now and feel the difference!",
+          "reasoning": "Uses curiosity ('The Secret...') to draw the reader in and focuses on the feeling of 'ultimate comfort'. It creates intrigue and encourages exploration."
+        },
+        {
+          "headline": "\u2b50\u2b50\u2b50\u2b50\u2b50 - The Softest Shirts EVER!",
+          "primary_text": "Don't just take our word for it! Our Signature Soft shirts are getting rave reviews. Join thousands of happy customers experiencing unmatched comfort. Shop the collection now!",
+          "reasoning": "Leverages social proof (5-star reviews and 'thousands of happy customers') to build trust and credibility. Highlights the 'unmatched comfort' benefit."
+        }
+      ]
+    }
+  }
+]

@@ -1,0 +1,29 @@
+[
+  {
+    "hypothesis": "The 'recent_roas_last_7_days' is significantly lower than the 'overall_roas', indicating a recent performance drop, potentially due to increased competition or seasonality.",
+    "evidence": "The 'recent_roas_last_7_days' is 1.06 compared to the 'overall_roas' of 5.79.",
+    "confidence": "High",
+    "validation": {
+      "valid": true,
+      "reason": "The 'recent_roas_last_7_days' (1.06) is significantly lower than the 'overall_roas' (5.79), indicating a recent performance drop. Hypothesis confirmed."
+    }
+  },
+  {
+    "hypothesis": "The worst performing creative, 'Confidence starts inside  elevate with men briefs.', has a ROAS of 0, suggesting a complete disconnect with the target audience or a technical issue preventing conversions. The messaging may not be resonating, or the landing page experience could be broken.",
+    "evidence": "The creative's ROAS is 0, indicating a complete failure.",
+    "confidence": "High",
+    "validation": {
+      "valid": false,
+      "reason": "The actual ROAS for creative 'Confidence starts inside  elevate with men briefs.' is 5.86. Hypothesis validated: False (Target ROAS: 4.0)."
+    }
+  },
+  {
+    "hypothesis": "The 'Adset-3 ATC' adset is underperforming with a ROAS of 3.78, suggesting a potential issue with the audience targeting or ad placement within that specific adset. The 'ATC' likely refers to 'Add to Cart', indicating a drop-off between ad engagement and adding items to the cart.",
+    "evidence": "The adset's ROAS is 3.78, lower than the overall campaign ROAS.",
+    "confidence": "Medium",
+    "validation": {
+      "valid": false,
+      "reason": "The adset 'Adset-3 ATC' has an actual ROAS of 9.17, which meets or exceeds the target ROAS of 4.0. Hypothesis refuted: The adset is not underperforming."
+    }
+  }
+]

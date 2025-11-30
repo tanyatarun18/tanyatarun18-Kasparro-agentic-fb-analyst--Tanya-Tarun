@@ -1,0 +1,24 @@
+[
+  {
+    "related_hypothesis": "The 'recent_roas_last_7_days' is significantly lower than the 'overall_roas', indicating a recent performance drop, potentially due to increased competition or seasonality.",
+    "recommendations": {
+      "variations": [
+        {
+          "headline": "ROAS Tanking? \ud83d\udcc9 Here's the Fix!",
+          "primary_text": "Seeing your return on ad spend plummet? You're not alone! Many brands are facing the same challenge. We've uncovered 3 simple tweaks that can instantly boost your ROAS. Download our FREE guide now and reclaim your profits! Limited time offer.",
+          "reasoning": "Addresses the problem directly, creates urgency with 'Limited time offer', and offers a solution (free guide) to entice clicks."
+        },
+        {
+          "headline": "\ud83e\udd2b The Secret Top Brands Use to Beat Ad Fatigue",
+          "primary_text": "Tired of your ads losing their punch? Discover the insider strategies that industry leaders are using to keep their campaigns fresh and profitable. Click 'Learn More' to unlock the secrets and revitalize your ad performance!",
+          "reasoning": "Uses curiosity and exclusivity ('Secret', 'insider strategies') to pique interest and overcome ad fatigue. Implies that others are already using this strategy."
+        },
+        {
+          "headline": "Don't Let Your ROAS Flatline! \ud83d\ude91",
+          "primary_text": "Is your ad performance on life support? Before you pull the plug, try this! We've helped hundreds of businesses revive their ROAS with our proven strategies. See the case studies and get a free consultation to diagnose your ad problems!",
+          "reasoning": "Uses a strong metaphor ('life support', 'flatline') to grab attention and highlights social proof ('hundreds of businesses') to build trust. Offers a free consultation to lower the barrier to entry."
+        }
+      ]
+    }
+  }
+]

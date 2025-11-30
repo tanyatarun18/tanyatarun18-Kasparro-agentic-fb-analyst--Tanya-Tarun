@@ -1,0 +1,29 @@
+[
+  {
+    "hypothesis": "Video ads are underperforming, potentially due to a lack of clear call-to-action or overly long duration leading to viewer drop-off.",
+    "evidence": "Video creative type is the worst performing.",
+    "confidence": "Medium",
+    "validation": {
+      "valid": false,
+      "reason": "Video ads are not underperforming. Actual ROAS: 8.83 (Target: 4.0). Hypothesis not validated."
+    }
+  },
+  {
+    "hypothesis": "Video ads are underperforming, possibly because the video content is not optimized for mobile viewing, resulting in a poor user experience and low engagement.",
+    "evidence": "Video creative type is the worst performing.",
+    "confidence": "Medium",
+    "validation": {
+      "valid": false,
+      "reason": "The average ROAS for video ads is 8.83, which meets or exceeds the target of 4.0. The hypothesis is not validated."
+    }
+  },
+  {
+    "hypothesis": "Video ads are underperforming, potentially due to a mismatch between the video content and the landing page experience, leading to confusion and low conversion rates.",
+    "evidence": "Video creative type is the worst performing.",
+    "confidence": "Medium",
+    "validation": {
+      "valid": false,
+      "reason": "Video ads ROAS is 8.83, which meets the target of 4.0. Hypothesis invalidated: Video ads are not underperforming."
+    }
+  }
+]

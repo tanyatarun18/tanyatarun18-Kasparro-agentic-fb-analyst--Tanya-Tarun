@@ -1,0 +1,29 @@
+[
+  {
+    "hypothesis": "The 'MEN BOLD OLORS DROP' campaign has a very low ROAS of 0.40, possibly due to an oversaturated market with similar products. Consumers may not perceive a unique value proposition, leading to low engagement and conversion rates.",
+    "evidence": "The ROAS is significantly below the target of 2.0, indicating a lack of consumer interest or competitive disadvantage.",
+    "confidence": "Medium",
+    "validation": {
+      "valid": false,
+      "reason": "No data found for campaign 'MEN BOLD OLORS DROP'. Hypothesis cannot be validated."
+    }
+  },
+  {
+    "hypothesis": "The 'MEN  Signature  Soft' campaign has a low ROAS of 0.65, potentially because the ad copy is not effectively communicating the benefits of the 'Signature Soft' product line. Customers may not understand what makes it unique or worth purchasing.",
+    "evidence": "The ROAS is significantly below the target of 2.0, suggesting a messaging problem.",
+    "confidence": "Medium",
+    "validation": {
+      "valid": true,
+      "reason": "The campaign 'MEN  Signature  Soft' has a ROAS of 1.99, which is below the target of 4.0. Hypothesis confirmed: The campaign is underperforming."
+    }
+  },
+  {
+    "hypothesis": "The 'Confidence starts inside  elevate with men inner vests.' creative has a ROAS of 0.32, possibly because inner vests are not typically associated with 'confidence' in the target demographic. The messaging may be misaligned with the product's perceived benefits.",
+    "evidence": "The ROAS is significantly below the target of 2.0, indicating a potential disconnect between the ad copy and the product's perceived value.",
+    "confidence": "Medium",
+    "validation": {
+      "valid": false,
+      "reason": "No data found for creative 'Confidence starts inside  elevate with men inner vests.'. Hypothesis validation: False."
+    }
+  }
+]

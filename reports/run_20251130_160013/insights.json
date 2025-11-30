@@ -1,0 +1,29 @@
+[
+  {
+    "hypothesis": "The 'Adset-5 WC' adset has a low ROAS of 1.53, indicating potential issues with the landing page experience. Users may be clicking the ads but not converting due to a confusing or unoptimized checkout process.",
+    "evidence": "ROAS is significantly below the target of 2.0, despite a reasonable CTR.",
+    "confidence": "Medium",
+    "validation": {
+      "valid": true,
+      "reason": "The ROAS for 'Adset-5 WC' is 3.18, which is below the target of 4.0. Hypothesis validated: True."
+    }
+  },
+  {
+    "hypothesis": "The 'Adset-5 WC' adset's ROAS of 1.53 might be due to an overly broad audience. While the high impression count suggests wide reach, the relatively low purchase conversion indicates that the ads are not resonating with the specific users who are most likely to buy.",
+    "evidence": "ROAS is below the target of 2.0, despite a high number of impressions.",
+    "confidence": "Medium",
+    "validation": {
+      "valid": true,
+      "reason": "The ROAS for 'Adset-5 WC' is 3.18, which is below the target of 4.0. The hypothesis that it is underperforming is validated."
+    }
+  },
+  {
+    "hypothesis": "The 'Adset-5 WC' adset's ROAS of 1.53 could be caused by ineffective ad creatives. The current creatives may not be compelling enough to drive conversions, despite generating clicks.",
+    "evidence": "ROAS is below the target of 2.0, suggesting a disconnect between ad engagement and purchase completion.",
+    "confidence": "Medium",
+    "validation": {
+      "valid": true,
+      "reason": "The ROAS for 'Adset-5 WC' is 1.53, which is below the target of 4.0. The hypothesis that ineffective ad creatives are causing the low ROAS is plausible."
+    }
+  }
+]
