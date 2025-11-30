@@ -25,9 +25,9 @@ graph TD
     Creative -->|Ad Variations| Report[Final Report]
 ```
 
-Agent Responsibilities
-🛡️ Governance Layer (New in V2)
-Role: Security & Validation.
+## 🤖 Agent Responsibilities
+##🛡️ Governance Layer (New in V2)
+##Role##: Security & Validation.
 
 Function: Intercepts the user query before it reaches any agent. It sanitizes input to prevent injections and validates the CSV schema to ensure data integrity.
 
@@ -55,7 +55,7 @@ Memory: It checks memory/short_term_memory.json before running to ensure it does
 4. Evaluator Agent (The Critic)
 Role: Mathematical Validation.
 
-Function: The logic gate. It takes a hypothesis from the Insight Agent and writes new Python code to test it against the data.
+Function: This is the logic gate. It takes a hypothesis from the Insight Agent and writes new Python code to test it against the data.
 
 Logic:
 
