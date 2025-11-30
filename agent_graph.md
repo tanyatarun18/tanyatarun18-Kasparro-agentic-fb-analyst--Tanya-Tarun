@@ -64,7 +64,7 @@ If Actual Metric meets the threshold (e.g., ROAS < 4.0), it returns Valid: True.
 
 If the data contradicts the hypothesis, it returns Valid: False.
 
-5. Creative Agent (The Copywriter)
-Role: Actionable Solutions.
+### 5. Creative Agent (The Copywriter)
+**Role**: Actionable Solutions.
 
-Function: Triggered only when the Evaluator validates a negative performance issue. It uses the insight context to generate 3 distinct ad variations (Headlines + Body Copy).
+**Function**: Triggered only when the Evaluator validates a negative performance issue. It uses the insight context to generate 3 distinct ad variations (Headlines + Body Copy).
