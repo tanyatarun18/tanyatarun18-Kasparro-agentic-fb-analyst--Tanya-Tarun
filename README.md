@@ -26,19 +26,21 @@ The system implements a **Planner-Evaluator-Creative Loop** to ensure high-quali
 
 ---
 
-## 🚀 Key Features (Production V2)
+## 🚀 Key Features
+
+### 🧠 Core Intelligence
+* **Math-Backed Validation:** The Evaluator Agent writes Python code to validate insights against ground-truth data (e.g., confirming `ROAS < 4.0`) before authorizing any actions.
+* **Short-Term Memory:** Validated insights are stored in `memory/short_term_memory.json`. The system consults this history to avoid re-discovering the same issues in subsequent runs.
+* **Context-Aware Creativity:** Generates ad copy specifically tailored to the diagnosed problem (e.g., fatigue vs. audience mismatch), grounded in the dataset's existing messaging.
 
 ### 🛡️ Security & Governance
 * **Input Sanitization:** Middleware intercepts and sanitizes user queries to prevent injection attacks or malicious commands.
 * **Schema Validation:** Enforces strict data contracts. The system validates the CSV structure (columns, data types) before processing to prevent runtime hallucinations.
 
-### 🔍 Observability & Logging
+### 🔍 Observability & Resilience
 * **Structured JSON Logs:** Every execution generates a trace file in `logs/` capturing agent inputs, outputs, code generation, and execution time (latency tracking).
-* **Failure Mapping:** Specific error types (`DataValidationError`, `SecurityError`, `LLMGenerationError`) are logged for easier debugging.
-
-### 🧠 Resilience & Memory
 * **Self-Correction:** Agents detect JSON parsing failures and API rate limits (429), automatically retrying with corrected prompts or backoff strategies.
-* **Short-Term Memory:** Validated insights are stored in `memory/short_term_memory.json`. The system consults this history to avoid re-discovering the same issues in subsequent runs.
+* **Timestamped Reporting:** Generates isolated report folders (`reports/run_TIMESTAMP/`) containing the Markdown report, insights, and creatives for full auditability.
 
 ---
 
