@@ -18,8 +18,8 @@ Write Python code to check if the entity mentioned is truly underperforming.
 1. **Identify the Entity:** Filter `df` to find the campaign, adset, or creative mentioned in the hypothesis. Use string contains.
 2. **Calculate Actual Metrics:** Calculate the actual mean ROAS for that entity.
 3. **Validation Logic:**
-   - If `Actual ROAS < 2.0`: Set `validation_result = True` (It IS underperforming, so we need to fix it).
-   - If `Actual ROAS >= 2.0`: Set `validation_result = False` (It is actually doing fine, ignore the hypothesis).
+   - If `Actual ROAS < 4.0`: Set `validation_result = True` (It IS underperforming, so we need to fix it).
+   - If `Actual ROAS >= 4.0`: Set `validation_result = False` (It is actually doing fine, ignore the hypothesis).
    - If no data found: Set `validation_result = False`.
 
 # Output Variables

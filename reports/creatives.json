@@ -1,22 +1,44 @@
 [
   {
-    "related_hypothesis": "The creative 'Push comfort, not wires  everyday men boxers.' has a ROAS of 0, indicating a severe disconnect with the target audience or a broken conversion funnel.",
+    "related_hypothesis": "The 'MEN_Signature_Soft' campaign is underperforming with a ROAS of 0.21, suggesting a potential audience mismatch or uncompelling ad copy.",
     "recommendations": {
       "variations": [
         {
-          "headline": "Ditch the Wires, Keep the Comfort!",
-          "primary_text": "Finally, boxers that feel as good as they look. Experience all-day comfort without the squeeze. Limited stock \u2013 grab yours before they're gone! Shop now and feel the difference. [Link]",
-          "reasoning": "Addresses the 'comfort' aspect directly, highlights the 'no wires' benefit, and creates urgency with 'limited stock'."
+          "headline": "Last Day: 50% Off Our Softest Styles!",
+          "primary_text": "Experience ultimate comfort with our signature soft collection. But hurry, this offer ends tonight! Upgrade your wardrobe now and feel the difference. Shop now before it's too late!",
+          "reasoning": "Creates urgency by highlighting a limited-time offer and emphasizes the benefit of comfort."
         },
         {
-          "headline": "The Secret to All-Day Comfort (Men, You'll Thank Us!)",
-          "primary_text": "Tired of uncomfortable underwear? Our wire-free boxers are engineered for ultimate support and breathability. See why thousands of men are making the switch. Click here to discover the secret! [Link]",
-          "reasoning": "Uses curiosity ('the secret') and social proof ('thousands of men') to pique interest and encourage clicks. Directly addresses the pain point of uncomfortable underwear."
+          "headline": "\ud83e\udd2b The Secret to All-Day Comfort?",
+          "primary_text": "Discover the secret everyone's raving about! Our signature soft collection is designed for ultimate comfort, no matter what your day throws at you. Find out why customers are calling it their new favorite. Shop now and experience the hype!",
+          "reasoning": "Uses curiosity to pique interest and social proof by mentioning customer reviews and hype."
         },
         {
-          "headline": "Upgrade Your Underwear Game!",
-          "primary_text": "Level up your everyday comfort with our revolutionary wire-free boxers. Designed for maximum support and all-day wear. Get 20% off your first order with code COMFORT20. Shop now and experience the difference! [Link]",
-          "reasoning": "Offers a direct incentive (20% off) to encourage immediate purchase. Uses aspirational language ('upgrade your game') and reinforces the key benefits of comfort and support."
+          "headline": "Join Thousands Loving Our Soft Collection!",
+          "primary_text": "Don't just take our word for it \u2013 thousands of men are already enjoying the unmatched comfort of our signature soft collection. See what all the buzz is about and upgrade your wardrobe today! Shop now and experience the difference!",
+          "reasoning": "Leverages social proof by highlighting the number of satisfied customers and encourages joining the trend."
+        }
+      ]
+    }
+  },
+  {
+    "related_hypothesis": "The 'men sig ature soft' campaign is failing with a ROAS of 0.24, possibly due to poor ad targeting or low-quality creative.",
+    "recommendations": {
+      "variations": [
+        {
+          "headline": "Finally! Men's Signature Soft is HERE!",
+          "primary_text": "Tired of rough, scratchy fabrics? Experience the ultimate comfort with our signature soft collection, designed specifically for men. Limited stock available \u2013 grab yours before they're gone! Shop now and feel the difference. [Link]",
+          "reasoning": "Creates urgency and highlights the benefit of superior comfort, addressing a potential pain point (rough fabrics)."
+        },
+        {
+          "headline": "The Secret to Unbelievable Comfort (Men Only)",
+          "primary_text": "What makes our Signature Soft collection so different? It's not just the fabric, it's the feeling. Discover the secret to all-day comfort that will change the way you dress. Click here to learn more and experience it for yourself! [Link]",
+          "reasoning": "Uses curiosity to draw the reader in and emphasizes the unique feeling of the product."
+        },
+        {
+          "headline": "Thousands of Men Are Switching to Signature Soft!",
+          "primary_text": "Join the movement! Men everywhere are discovering the unmatched comfort and quality of our Signature Soft collection. See what all the hype is about and upgrade your wardrobe today. Shop now and experience the difference! [Link]",
+          "reasoning": "Leverages social proof to build trust and encourages users to join a trend."
         }
       ]
     }

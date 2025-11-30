@@ -1,29 +1,29 @@
 [
   {
-    "hypothesis": "The creative 'Wirefree ease, cloudsoft cups  women panties that fits right.' has a ROAS of 0, indicating a severe disconnect with the target audience or a broken conversion funnel.",
-    "evidence": "The ROAS is exceptionally low, suggesting the creative is not resonating or there are technical issues preventing conversions.",
+    "hypothesis": "The 'Men-Athleisure Cooli-g' campaign has a ROAS of 0.0, indicating a broken ad or landing page.",
+    "evidence": "ROAS is significantly below the target of 2.0.",
     "confidence": "High",
     "validation": {
       "valid": false,
-      "reason": "Actual ROAS is 9.77, which is less than 2.0. Underperformance confirmed."
+      "reason": "Actual ROAS is 9.18, which is not low. Hypothesis is incorrect."
     }
   },
   {
-    "hypothesis": "The 'Men-Athleisure Cooli-g' campaign has a ROAS of 0.0, suggesting a problem with targeting, ad copy, or landing page experience.",
-    "evidence": "The ROAS is exceptionally low, indicating a complete failure to generate revenue from ad spend.",
-    "confidence": "High",
-    "validation": {
-      "valid": false,
-      "reason": "Actual ROAS is 9.18, which is greater than or equal to 2.0. Hypothesis is invalid."
-    }
-  },
-  {
-    "hypothesis": "The creative 'Push comfort, not wires  everyday men boxers.' has a ROAS of 0, indicating a severe disconnect with the target audience or a broken conversion funnel.",
-    "evidence": "The ROAS is exceptionally low, suggesting the creative is not resonating or there are technical issues preventing conversions.",
+    "hypothesis": "The 'MEN_Signature_Soft' campaign is underperforming with a ROAS of 0.21, suggesting a potential audience mismatch or uncompelling ad copy.",
+    "evidence": "ROAS is significantly below the target of 2.0.",
     "confidence": "High",
     "validation": {
       "valid": true,
-      "reason": "Actual ROAS is 1.00, which is less than 2.0. Underperformance confirmed."
+      "reason": "Actual ROAS is 0.21, which is low. Underperformance confirmed."
+    }
+  },
+  {
+    "hypothesis": "The 'men sig ature soft' campaign is failing with a ROAS of 0.24, possibly due to poor ad targeting or low-quality creative.",
+    "evidence": "ROAS is significantly below the target of 2.0.",
+    "confidence": "High",
+    "validation": {
+      "valid": true,
+      "reason": "Actual ROAS is 0.24, which is low. Underperformance confirmed."
     }
   }
 ]

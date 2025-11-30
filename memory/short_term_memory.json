@@ -10,5 +10,17 @@
     "query": "Why did ROAS drop last week?",
     "date": "2025-11-30",
     "validation_reason": "Actual ROAS is 1.00, which is less than 2.0. Underperformance confirmed."
+  },
+  {
+    "hypothesis": "The 'MEN_Signature_Soft' campaign is underperforming with a ROAS of 0.21, suggesting a potential audience mismatch or uncompelling ad copy.",
+    "query": "Why did ROAS drop last week?",
+    "date": "2025-11-30",
+    "validation_reason": "Actual ROAS is 0.21, which is low. Underperformance confirmed."
+  },
+  {
+    "hypothesis": "The 'men sig ature soft' campaign is failing with a ROAS of 0.24, possibly due to poor ad targeting or low-quality creative.",
+    "query": "Why did ROAS drop last week?",
+    "date": "2025-11-30",
+    "validation_reason": "Actual ROAS is 0.24, which is low. Underperformance confirmed."
   }
 ]
