@@ -101,7 +101,7 @@ Runs the standard diagnosis: "Why did ROAS drop last week?"
 make run                                                                                                                                                                                                          
 OR: python run.py
 
-3. Custom Query                                                                                                                                                                                                    
+2. Custom Query                                                                                                                                                                                                    
 Ask specific questions about your data.                                                                                                                                                                            
 make query q="Which creative type has the highest CTR?"                                                                                                                                                            
 OR: python run.py "Which creative type has the highest CTR?"
